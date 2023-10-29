@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 COMMAND="echo $(ifconfig | grep broadcast | awk '{print $2}')"
 
