@@ -1,0 +1,9 @@
+---
+  - name: install Neofetch
+    hosts: linux
+    become: true
+    tasks:
+      - name: Ensure Neofetch is installed
+        apt:
+          name: neofetch # Package names are usually lowercase
+          state: latest
